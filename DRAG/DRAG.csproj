@@ -59,18 +59,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -81,19 +81,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\kierownica.png" />
+    <None Include="Resources\kontur.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\koło roweru.png" />
+    <None Include="Resources\kołotylne1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ped.png" />
+    <None Include="Resources\zębatka1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ramar.png" />
+    <None Include="Resources\kołoprz.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\siadełko.png" />
+    <None Include="Resources\rama3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kierownica1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siadełko2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tło.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obudowa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

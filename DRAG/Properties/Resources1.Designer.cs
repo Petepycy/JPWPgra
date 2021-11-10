@@ -59,13 +59,33 @@ namespace DRAG.Properties {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kierownica {
+        internal static System.Drawing.Bitmap kierownica1 {
             get {
-                object obj = ResourceManager.GetObject("kierownica", resourceCulture);
+                object obj = ResourceManager.GetObject("kierownica1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kołoprz {
+            get {
+                object obj = ResourceManager.GetObject("kołoprz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+  
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kołotylne1 {
+            get {
+                object obj = ResourceManager.GetObject("kołotylne1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +93,9 @@ namespace DRAG.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap koło_roweru {
+        internal static System.Drawing.Bitmap kontur {
             get {
-                object obj = ResourceManager.GetObject("koło roweru", resourceCulture);
+                object obj = ResourceManager.GetObject("kontur", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +103,29 @@ namespace DRAG.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ped {
+        internal static System.Drawing.Bitmap obudowa {
             get {
-                object obj = ResourceManager.GetObject("ped", resourceCulture);
+                object obj = ResourceManager.GetObject("obudowa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rama2 {
+            get {
+                object obj = ResourceManager.GetObject("rama2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap siadełko1 {
+            get {
+                object obj = ResourceManager.GetObject("siadełko1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,19 +133,19 @@ namespace DRAG.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ramar {
+        internal static System.Drawing.Bitmap tło {
             get {
-                object obj = ResourceManager.GetObject("ramar", resourceCulture);
+                object obj = ResourceManager.GetObject("tło", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap siadełko {
+        internal static System.Drawing.Bitmap zębatka1 {
             get {
-                object obj = ResourceManager.GetObject("siadełko", resourceCulture);
+                object obj = ResourceManager.GetObject("zębatka1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

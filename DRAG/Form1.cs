@@ -15,72 +15,108 @@ namespace DRAG
         public bool level1 = true;
         public bool level2 = false;
         public bool level3 = false;
-        public bool lvl = false;
         public Form1()
         {
             InitializeComponent();
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 
         private void pictureBox_MouseDown(object sender, MouseEventArgs e)
         {
-            //pictureBox1.DoDragDrop(pictureBox1.Image, DragDropEffects.Copy);
+
             ((PictureBox)sender).DoDragDrop(((PictureBox)sender).Image, DragDropEffects.Copy);
-            
+
+        }
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            Gamemode();
         }
 
+        private void Fact1()
+        {
+            pictureBox11.Visible = false;
+            pictureBox16.Image = Properties.Resources.kontur;
+            pictureBox16.Location = new Point(16, 15);
+            pictureBox16.Size = new System.Drawing.Size(457, 428);
+        }
         private void Gamemode()
         {
-            timer1.Start();
-            
-            if (level1==true)
+
+            if (level1 == true)
             {
+                pictureBox7.Visible = false;
+                pictureBox13.Visible = false;
+                pictureBox15.Visible = false;
                 
-                if (CheckForWinLevel1(level1) == false)
-                {
-                    level1 = false;
-                    level2 = true;
-                    
-                }
-               
+                panel3.BackgroundImageLayout = ImageLayout.Stretch;
+                pictureBox1.Image = Properties.Resources.kołoprz;
+                pictureBox2.Image = Properties.Resources.siadełko1;
+                pictureBox3.Image = Properties.Resources.kierownica1;
+                pictureBox4.Image = Properties.Resources.rama2;
+                pictureBox5.Image = Properties.Resources.zębatka1;
+                pictureBox6.Image = Properties.Resources.kołotylne1;
+                
+                label4.Text = "Level 1";
+            
             }
-            if (level2==true)
+            if (level2 == true)
             {
-                MessageBox.Show("2 poziom");
-                level2 = false;
-                timer1.Stop();
+                pictureBox16.Visible = false;
+                panel3.BackgroundImage = Properties.Resources.obudowa;
+                panel3.BackgroundImageLayout = ImageLayout.Stretch;
+                //pictureBox1.Image = Properties.Resources.pedały;
+                //pictureBox2.Image = Properties.Resources.kiero;
+                //pictureBox3.Image = Properties.Resources.koło1;
+                // pictureBox4.Image = Properties.Resources.koło2;
+                // pictureBox5.Image = Properties.Resources.siadełko1;
+                //pictureBox6.Image = Properties.Resources.rama;
+                label4.Text = "Level 2";
             }
-           /* if (level2 == true)
-            {
-                CheckForWinLevel1();
-            }
+
             if (level3 == true)
             {
-                CheckForWinLevel1();
-            }*/
+
+            }
         }
 
-        private bool CheckForWinLevel1(bool level1)
+        private bool CheckForWinLevel1()
+        {
+            if ((pictureBox10.Image == pictureBox1.Image || pictureBox10.Image == pictureBox6.Image) && pictureBox12.Image == pictureBox4.Image && (pictureBox6.Image == pictureBox11.Image || pictureBox1.Image == pictureBox11.Image) && pictureBox5.Image == pictureBox14.Image && pictureBox2.Image == pictureBox8.Image && pictureBox9.Image == pictureBox3.Image)
+            {
+                MessageBox.Show("Congratulations");
+                return true;
+
+            }
+            else
+            {
+                MessageBox.Show("Try again");
+                return false;
+            }
+
+        }
+
+        private bool CheckForWinLevel2()
         {
             if (pictureBox10.Image == pictureBox1.Image && pictureBox11.Image == pictureBox4.Image && pictureBox6.Image == pictureBox12.Image && pictureBox5.Image == pictureBox14.Image && pictureBox2.Image == pictureBox8.Image && pictureBox9.Image == pictureBox3.Image)
             {
                 MessageBox.Show("Congratulations");
-                return false;
+                return true;
 
             }
-            else return true;
-            
-            
+            else
+            {
+                MessageBox.Show("Try again");
+                return false;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            pictureBox7.Visible = false;
+            pictureBox13.Visible = false;
+            pictureBox15.Visible = false;
+
             pictureBox7.AllowDrop = true;
             pictureBox8.AllowDrop = true;
             pictureBox9.AllowDrop = true;
@@ -90,21 +126,13 @@ namespace DRAG
             pictureBox13.AllowDrop = true;
             pictureBox14.AllowDrop = true;
             pictureBox15.AllowDrop = true;
-            Gamemode();
-            lblDropHere7.Visible = false;
-            lblDropHere8.Visible = false;
-            lblDropHere9.Visible = false;
-            lblDropHere10.Visible = false;
-            lblDropHere11.Visible = false;
-            lblDropHere12.Visible = false;
-            lblDropHere13.Visible = false;
-            lblDropHere14.Visible = false;
-            lblDropHere15.Visible = false;
+            
+
+            
         }
 
-       private void pictureBox7_DragEnter(object sender, DragEventArgs e)
+       public  void pictureBox7_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere7.Visible = true;
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -112,18 +140,18 @@ namespace DRAG
         }
         private void pictureBox7_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere7.Visible = false;
+            
         }
 
         private void pictureBox7_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere7.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox7.Image = getPicture;
         }
         private void pictureBox8_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere7.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -131,17 +159,17 @@ namespace DRAG
         }
         private void pictureBox8_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere7.Visible = false;
+            
         }
         private void pictureBox8_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere7.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox8.Image = getPicture;
         }
         private void pictureBox9_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere9.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -149,17 +177,17 @@ namespace DRAG
         }
         private void pictureBox9_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere9.Visible = false;
+            
         }
         private void pictureBox9_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere9.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox9.Image = getPicture;
         }
         private void pictureBox10_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere10.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -167,17 +195,17 @@ namespace DRAG
         }
         private void pictureBox10_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere10.Visible = false;
+            
         }
         private void pictureBox10_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere10.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox10.Image = getPicture;
         }
         private void pictureBox11_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere11.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -185,11 +213,11 @@ namespace DRAG
         }
         private void pictureBox11_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere11.Visible = false;
+           
         }
         private void pictureBox11_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere11.Visible = false;
+           
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox11.Image = getPicture;
         }
@@ -213,7 +241,7 @@ namespace DRAG
         }
         private void pictureBox13_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere13.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -221,17 +249,17 @@ namespace DRAG
         }
         private void pictureBox13_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere13.Visible = false;
+            
         }
         private void pictureBox13_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere13.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox13.Image = getPicture;
         }
         private void pictureBox14_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere14.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -239,17 +267,17 @@ namespace DRAG
         }
         private void pictureBox14_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere14.Visible = false;
+            
         }
         private void pictureBox14_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere14.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox14.Image = getPicture;
         }
         private void pictureBox15_DragEnter(object sender, DragEventArgs e)
         {
-            lblDropHere15.Visible = true;
+            
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -257,29 +285,54 @@ namespace DRAG
         }
         private void pictureBox15_DragLeave(object sender, EventArgs e)
         {
-            lblDropHere15.Visible = false;
+            
         }
         private void pictureBox15_DragDrop(object sender, DragEventArgs e)
         {
-            lblDropHere15.Visible = false;
+            
             Image getPicture = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             pictureBox15.Image = getPicture;
         }
 
-       
-
-        
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void CheckButton_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
-            Gamemode();
-            
-            /*if (level1 == true)
+
+            if (CheckForWinLevel1() == true)
             {
-                timer1.Start();
+                
+                level1 = false;
+                level2 = true;
+                Gamemode();
+                pictureBox7.Image = null;
+                pictureBox8.Image = null;
+                pictureBox9.Image = null;
+                pictureBox10.Image = null;
+                pictureBox11.Image = null;
+                pictureBox12.Image = null;
+                pictureBox13.Image = null;
+                pictureBox14.Image = null;
+                pictureBox15.Image = null;
+                Fact1();
             }
-            else if (level1 == false) timer1.Stop(); */
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            pictureBox7.Image = null;
+            pictureBox8.Image = null;
+            pictureBox9.Image = null;
+            pictureBox10.Image = null;
+            pictureBox11.Image = null;
+            pictureBox12.Image = null;
+            pictureBox13.Image = null;
+            pictureBox14.Image = null;
+            pictureBox15.Image = null;
+        }
+
     }
 }
