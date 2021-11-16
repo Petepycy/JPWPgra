@@ -73,6 +73,16 @@ namespace DRAG.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kartagraficzna {
+            get {
+                object obj = ResourceManager.GetObject("kartagraficzna", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kierownica1 {
             get {
                 object obj = ResourceManager.GetObject("kierownica1", resourceCulture);
@@ -126,6 +136,16 @@ namespace DRAG.Properties {
         internal static System.Drawing.Bitmap płyta {
             get {
                 object obj = ResourceManager.GetObject("płyta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ram {
+            get {
+                object obj = ResourceManager.GetObject("ram", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

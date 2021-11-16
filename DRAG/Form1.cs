@@ -78,8 +78,8 @@ namespace DRAG
                 pictureBox7.Location = new Point(257, 394);
                 pictureBox7.Size = new System.Drawing.Size(110, 28);
 
-                pictureBox8.Location = new Point(133, 189);
-                pictureBox8.Size = new System.Drawing.Size(147, 13);
+                pictureBox8.Location = new Point(217, 69);
+                pictureBox8.Size = new System.Drawing.Size(34, 113);
 
                 pictureBox9.Location = new Point(133, 208);
                 pictureBox9.Size = new System.Drawing.Size(147, 10);
@@ -96,15 +96,15 @@ namespace DRAG
                 pictureBox13.Location = new Point(257, 351);
                 pictureBox13.Size = new System.Drawing.Size(110, 28);
 
-                pictureBox14.Location = new Point(165, 124);
-                pictureBox14.Size = new System.Drawing.Size(73, 59);
+                pictureBox14.Location = new Point(127, 90);
+                pictureBox14.Size = new System.Drawing.Size(63, 58);
 
                 panel3.BackgroundImage = Properties.Resources.obudowa;
                 panel3.BackgroundImageLayout = ImageLayout.Stretch;
                 pictureBox1.Image = Properties.Resources.płyta;
                 pictureBox2.Image = Properties.Resources.wentylator;
-                pictureBox3.Image = Properties.Resources.karta;
-                //pictureBox4.Image = Properties.Resources.koło2;
+                pictureBox3.Image = Properties.Resources.kartagraficzna;
+                pictureBox4.Image = Properties.Resources.ram;
                 //pictureBox5.Image = Properties.Resources.siadełko1;
                 //pictureBox6.Image = Properties.Resources.rama;
                 pictureBox17.Image = Properties.Resources.zasilacz;

@@ -122,5 +122,11 @@
   <ItemGroup>
     <None Include="Resources\zasilacz.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kartagraficzna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ram.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
