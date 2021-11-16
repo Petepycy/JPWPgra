@@ -121,61 +121,43 @@
   <data name="zębatka1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zębatka1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kołotylne1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kołotylne1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="obudowa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\obudowa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tło" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tło.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rama" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="zębatka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zębatka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kierownica" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kierownica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rama2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rama3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kierownica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kierownica1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kołotylne" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kołotylne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pedały" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pedały.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rama2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kontur" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kontur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kołotylne1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kołotylne1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kołoprz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kołoprz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="siadełko" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\siadełko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kontur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kontur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wentylator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wentylator.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="płyta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\płyta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="siadełko1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siadełko2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kołotył" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kołotył.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rowerinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rowerinfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rama2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rama3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kołoprzód" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kołoprzód.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kierownican" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kierownican.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nrama" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nrama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="obudowa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\obudowa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zasilacz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zasilacz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -107,5 +107,20 @@
   <ItemGroup>
     <None Include="Resources\obudowa.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rowerinfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\płyta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wentylator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zasilacz.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
