@@ -113,6 +113,16 @@ namespace DRAG.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap komp {
+            get {
+                object obj = ResourceManager.GetObject("komp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kontur {
             get {
                 object obj = ResourceManager.GetObject("kontur", resourceCulture);

@@ -13,9 +13,9 @@ namespace DRAG
     public partial class Form1 : Form
     {
         public bool level1 = true;
-        public bool level22 = false;
         public bool level2 = false;
         public bool level3 = false;
+        private int time;
         public Form1()
         {
             InitializeComponent();
@@ -30,20 +30,58 @@ namespace DRAG
         }
         private void StartButton_Click(object sender, EventArgs e)
         {
+            panel3.BackgroundImage = Properties.Resources.tło;
+            pictureBox7.BackColor = Color.White;
+            pictureBox8.BackColor = Color.White;
+            pictureBox9.BackColor = Color.White;
+            pictureBox10.BackColor = Color.White;
+            pictureBox11.BackColor = Color.White;
+            pictureBox12.BackColor = Color.White;
+            pictureBox13.BackColor = Color.White;
+            pictureBox14.BackColor = Color.White;
+            pictureBox15.BackColor = Color.White;
+            pictureBox16.BackColor = Color.White;
+            label1.Visible = true;
+            label2.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
             Gamemode();
         }
 
         private void Fact1()
         {
+                pictureBox11.Visible = false;
+                pictureBox16.Image = Properties.Resources.rowerinfo;
+                pictureBox16.Location = new Point(16, 15);
+                pictureBox16.Size = new System.Drawing.Size(457, 428);   
+        }
+        private void afterFact1()
+        {
+            pictureBox11.Visible = true;
+            pictureBox16.Image = null;
+            pictureBox16.Location = new Point(3, 439);
+            pictureBox16.Size = new System.Drawing.Size(22, 18);
+        }
+        private void Fact2()
+        {
             pictureBox11.Visible = false;
-            pictureBox16.Image = Properties.Resources.rowerinfo;
+            pictureBox16.Image = Properties.Resources.komp;
             pictureBox16.Location = new Point(16, 15);
             pictureBox16.Size = new System.Drawing.Size(457, 428);
-            
+        }
+        private void afterFact2()
+        {
+            pictureBox11.Visible = true;
+            pictureBox16.Image = null;
+            pictureBox16.Location = new Point(3, 439);
+            pictureBox16.Size = new System.Drawing.Size(22, 18);
         }
         private void Gamemode()
         {
-
+            timer1.Start();
+            
             if (level1 == true)
             {
                 pictureBox7.Visible = false;
@@ -52,29 +90,24 @@ namespace DRAG
                 
                 panel3.BackgroundImageLayout = ImageLayout.Stretch;
                 pictureBox1.Image = Properties.Resources.kołoprz;
+                label1.Text = "koło przednie";
                 pictureBox2.Image = Properties.Resources.siadełko1;
+                label2.Text = "siadełko";
                 pictureBox3.Image = Properties.Resources.kierownica1;
+                label5.Text = "kierownica";
                 pictureBox4.Image = Properties.Resources.rama2;
+                label6.Text = "rama";
                 pictureBox5.Image = Properties.Resources.zębatka1;
+                label7.Text = "zębatka";
                 pictureBox6.Image = Properties.Resources.kołotylne1;
+                label8.Text = "koło tylne";
                 
                 label4.Text = "Level 1";
             
             }
-            if (level22 == true)
-            {
-                Fact1();
-            }
             if (level2 == true)
             {
-                /*if (pictureBox7.Image == null)    pictureBox7.Visible = false;
-                pictureBox9.Visible = false;
-                pictureBox10.Visible = false;
-                pictureBox11.Visible = false;
-                pictureBox12.Visible = false;
-                pictureBox14.Visible = false;
-                pictureBox16.Visible = false;
-                */
+                pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
                 pictureBox7.Location = new Point(257, 394);
                 pictureBox7.Size = new System.Drawing.Size(110, 28);
 
@@ -102,12 +135,17 @@ namespace DRAG
                 panel3.BackgroundImage = Properties.Resources.obudowa;
                 panel3.BackgroundImageLayout = ImageLayout.Stretch;
                 pictureBox1.Image = Properties.Resources.płyta;
+                label1.Text = "płyta główna";
                 pictureBox2.Image = Properties.Resources.wentylator;
+                label2.Text = "procesor z wentylatorem";
                 pictureBox3.Image = Properties.Resources.kartagraficzna;
+                label5.Text = "karta graficzna";
                 pictureBox4.Image = Properties.Resources.ram;
+                label6.Text = "koło przednie";
                 //pictureBox5.Image = Properties.Resources.siadełko1;
                 //pictureBox6.Image = Properties.Resources.rama;
-                pictureBox17.Image = Properties.Resources.zasilacz;
+                pictureBox5.Image = Properties.Resources.zasilacz;
+                label7.Text = "zasilacz";
                 //pictureBox18.Image = Properties.Resources.koło2;
                 label4.Text = "Level 2";
             }
@@ -152,9 +190,6 @@ namespace DRAG
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //pictureBox7.Visible = false;
-            //pictureBox13.Visible = false;
-            //pictureBox15.Visible = false;
 
             pictureBox7.AllowDrop = true;
             pictureBox8.AllowDrop = true;
@@ -165,9 +200,7 @@ namespace DRAG
             pictureBox13.AllowDrop = true;
             pictureBox14.AllowDrop = true;
             pictureBox15.AllowDrop = true;
-            
-
-            
+               
         }
 
        public  void pictureBox7_DragEnter(object sender, DragEventArgs e)
@@ -334,6 +367,31 @@ namespace DRAG
             pictureBox13.Image = null;
             pictureBox14.Image = null;
             pictureBox15.Image = null;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time++;
+            if (time<10 && level1==true)
+            {
+                Fact1();
+            }
+            else if (time>10 && level1==true)
+            {
+                timer1.Stop();   
+                time = 0;
+                afterFact1();
+            }
+            if (time < 10 && level2 == true)
+            {
+                Fact2();
+            }
+            else if (time > 10 && level2 == true)
+            {
+                timer1.Stop();
+                time = 0;
+                afterFact2();
+            }
         }
     }
 }
